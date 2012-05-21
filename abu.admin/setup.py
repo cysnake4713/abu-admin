@@ -29,6 +29,7 @@ setup(name='abu.admin',
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
+          'argparse',
       ],
       entry_points="""
       # -*- Entry points: -*-
@@ -36,3 +37,4 @@ setup(name='abu.admin',
       abu.admin = abu.admin.main:main
       """,
       )
+
