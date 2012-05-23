@@ -185,6 +185,7 @@ read_and_display 的代码可以通过 ``svn`` 获取到：
 .. _Python: http://www.python.org
 .. _pypi: http://pypi.python.org/pypi/abu.admin 
 .. _abu.admin: http://code.google.com/abu-admin
+.. _setuptools: http://pypi.python.org/pypi/setuptools
 .. _TracAdmin: http://trac.edgewall.org/wiki/TracAdmin
 .. _subversion: http://subversion.tigris.org/
 
