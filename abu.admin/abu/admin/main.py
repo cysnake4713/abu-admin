@@ -59,6 +59,9 @@ def do_init():
 def do_backup():
     print 'this command is unsupported yet.'
 
+def do_restore():
+    print 'this command is unsupported yet.'
+
 def do_upgrade():
     print 'this command is unsupported yet.'
 
@@ -74,9 +77,10 @@ def print_help():
     print '\n    '.join(['available subcommands:',
         'init',
         'backup',
-        'list',
+        'restore',
         'upgrade',
 
+        'list',
         'help',
         ])
 
@@ -85,6 +89,8 @@ def print_subcommand_help():
     if subcmd == 'init':
         print 'abu.admin init <application> </path/to/instance>'
     elif subcmd == 'backup':
+        print 'this command is unsupported yet.'
+    elif subcmd == 'restore':
         print 'this command is unsupported yet.'
     elif subcmd == 'list':
         print 'list all applications supported abu.abmin.'
@@ -112,6 +118,8 @@ def main():
         do_init()
     elif cmd == 'backup':
         do_backup()
+    elif cmd == 'restore':
+        do_restore()
     elif cmd == 'upgrade':
         do_upgrade()
     else:
