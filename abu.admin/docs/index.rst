@@ -39,11 +39,13 @@ abu.admin_ 采用了类似 subversion_ 风格的命令行接口，可以运行�
     available subcommands:
         init
         backup
-        list
+        restore
         upgrade
+
+        list
         help
 
-从使用帮助可以看到，abu.admin_ 基本用法就是子命令及其参数。目前可用的子命令有：``list``/``init``/``backup``/``upgrade``/``help`` 等。对于子命令的使用，可以执行 ``abu.admin help <subcommand>`` 获得帮助。
+从使用帮助可以看到，abu.admin_ 基本用法就是子命令及其参数。目前可用的子命令有：``list``/``init``/``backup``/``restore``/``upgrade``/``help`` 等。对于子命令的使用，可以执行 ``abu.admin help <subcommand>`` 获得帮助。
 
 ::
 
@@ -129,7 +131,10 @@ read_and_display 的代码可以通过 ``svn`` 获取到：
         def init(self, path):
             raise NotImplementedError
 
-        def backup(self, path, backup_path):
+        def backup(self, path, backup_file):
+            raise NotImplementedError
+
+        def restore(self, path, restore_file):
             raise NotImplementedError
 
         def upgrade(self, path, old_version):
